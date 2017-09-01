@@ -1,0 +1,108 @@
+<head>
+	<meta charset="utf-8">
+	<title>KGB Flashcards</title>
+	<script data-main="scripts/main" src="require.js"></script>
+
+<body>
+
+    <div id="newCards" >
+        <center>
+            Front:<input type="text" id="newFront" name="front"/>
+            Back: <input type="text" id="newBack" name="back"/>
+            <input value="Add" type="button" onclick="userEnter();"/>
+        </center>
+    </div>
+
+    <div id="cardButton" ><p id="cardText"></p></div>
+
+    <p align="center">
+        <input type="button" id="prevCard" value="прошлая" onclick="cardsHandle.cardMove(-1);"/>
+        <span id="positionIndex">0/0</span>
+        <input type="button" id="nextCard" value="следующая" onclick="cardsHandle.cardMove(1);"/>
+    </p>
+
+    <script> 
+        String.prototype.isEmpty = function() {// Returns if a string has only whitespace
+            return (this.length === 0 || !this.trim());
+        };
+
+        function Card(front, back){
+            /*A card is just a container that holds a front and back value! 
+                - You can get either back or front by displaying it*/
+            this.frontVal = front;
+            this.backVal = back;
+
+            this.display = function(side){
+                if( side === 0 ){
+                    return this.frontVal;
+                }else{
+                    return this.backVal;
+                }
+            };
+        }
+
+        var cardsHandle = {
+            cards: [],
+            cardInd: 0,
+            cardButton: document.getElementById("cardButton"),
+            cardText: document.getElementById("cardText"),
+            cardTPosition: document.getElementById("positionIndex"),
+            cardSide: 0,
+
+            cardAdd: function(back, front){
+                this.cards.push( new Card(back, front) );
+            },
+            cardUpdate: function(){
+                var curCard = this.cards[ this.cardInd ];
+                this.cardText.innerHTML = curCard.display( this.cardSide );
+                this.cardTPosition.innerHTML = (this.cardInd+1)+"/"+this.cards.length;
+            },
+            cardFlip: function(){
+                this.cardSide = (this.cardSide + 1) % 2;
+            },
+            cardMove: function(moveBy){
+                this.cardInd += moveBy;
+                if( this. cardInd < 0 ){
+                    this.cardInd += this.cards.length;
+                }
+                this.cardInd = this.cardInd % this.cards.length;
+
+                this.cardSide = 0;// Set back to front
+                this.cardUpdate();
+            },
+            cardTap: function(){
+                this.cardFlip();
+                this.cardUpdate();// Display card
+            }
+        };
+		
+		var fs = require("fs");
+		var text = fs.readFileSync("./test.txt", "utf-8");
+		var textByLine = text.split("\n")
+        for (i = 0; i < textByLine.length; i+=2) {
+    		cardsHandle.cardAdd(textByLine[i],textByLine[i+1]);
+			cardsHandle.cardUpdate()
+		} 
+		cardsHandle.cardAdd("Hello or Good bye","Salut");
+        cardsHandle.cardAdd("Hello or Good Morning","Bonjour");
+        cardsHandle.cardAdd("Good Night","Bonne nuit!");
+        cardsHandle.cardUpdate();
+
+        var userEnter = function(){
+            var nFront = document.getElementById("newFront"),
+                nBack = document.getElementById("newBack");
+
+            if( nFront.value.isEmpty() || nBack.value.isEmpty() )
+                return;
+
+            cardsHandle.cardAdd(nFront.value,nBack.value);
+            nFront.value="";
+            nBack.value="";
+            cardsHandle.cardUpdate();
+        }
+
+        cardsHandle.cardButton.addEventListener('click', function(){ cardsHandle.cardTap();} );
+
+    </script>
+
+</body>

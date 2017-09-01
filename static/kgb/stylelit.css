@@ -1,0 +1,70 @@
+h3,h4 {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin: 0 auto;
+	top: 480px;
+}
+
+h4 {
+	top: 710px;
+	height: 50px;
+}
+
+#engtit {
+	top: 700px;
+}
+ 
+#chekhov {
+	position: relative;
+	left: 0px;
+	width: 1300px;
+	text-align: center;
+	text-shadow: #CE5246;
+	color: lightcoral;
+	top: 420px;
+	font-size: 18px;
+}
+
+.rus,.eng {
+	background: #395B80;
+	position: relative;
+	top: 485px;
+	color: lightcoral;
+	font-size: 20px;
+	margin: auto 20px;
+}
+
+.eng {
+	top: 600px; 	 
+}
+
+.banner {
+		opacity: 0.9;
+		position: absolute;
+		width: %100;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+
+h1 { 
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	color: gold;
+	opacity: 0.9;
+	font-size: 65px;
+}
+
+h2 {
+	position: absolute;
+	color: white;
+	top: 230px;
+	left: 600px;
+}
+
+html {
+	background: url(hammersickle.png);
+	background-repeat: repeat;
+}
+

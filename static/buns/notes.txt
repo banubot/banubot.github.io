@@ -1,0 +1,11 @@
+goals
+
+//finish score page
+[check] backend
+[ ] connect to back end with jquery
+[ ] use table builder and data from server to create high scores table
+[ ] read data from form and post it to the server upon button press
+
+long term goals
+
+[ ] refactor for good design
