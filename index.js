@@ -23,6 +23,9 @@ function main () {
 	// though they're in a folder called static, from the client's point
 	// of view, they reside in the top level, so /static/foo.js would be
 	// <script type="javascript" src="/foo.js"></script> in the client
+
+	// this is what powers the entire kgb website, as the files are accessible at
+	// /kgb/myfile.html
 	var stat = require('diet-static')({path: app.path+'/static/'});
 	app.footer(stat);
 
