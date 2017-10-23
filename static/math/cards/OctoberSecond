@@ -1,5 +1,5 @@
 An ordered pair (a . b),is a set of the form {a . {a . b}}
-Let A . B be sets. The cartesian product AXB is,{(a . b) | a e A, b e B}
+Let A . B be sets. The cartesian product AXB is,{(a . b) | a e A & b e B}
 A relation between 2 sets A & B, any subset R of AXB ie R C AXB
 R is a relation ON A,if R C AXA
 a is related to b by the relation R. aRb, (a . b) e R
