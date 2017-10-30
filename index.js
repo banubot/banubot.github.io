@@ -57,7 +57,7 @@ app.get('/kgb/flashcards/:deck', function($){
 			throw err;
 		}
 		var array = data.split('\n').map(function(line){
-			line = line.split(',');
+			line = line.split('|');
 			return {
 				front: line[1], 
 				back: line[0]

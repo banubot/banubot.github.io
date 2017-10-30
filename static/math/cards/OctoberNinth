@@ -1,5 +1,5 @@
-Say A is WELL ORDERED if, every nonempty subset of A has a minimum
-Say A is COMPLETE if, every nonempty subset which is BOUNDED BELOW has an INFIMUM
-Any min is an inf, True
-Any inf is a min, False
-An EQUIVALENCE RELATION on a set A is, a relation satisfying: reflexive & symmetric & transitive notation ~ or ~- or ---
+A set is WELL ORDERED if| every nonempty subset has a minimum
+A set is COMPLETE if| every nonempty subset which is BOUNDED BELOW has an INFIMUM
+Any min is an inf?| True
+Any inf is a min?| False
+An EQUIVALENCE RELATION satisfys| reflexive & symmetric & transitive

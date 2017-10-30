@@ -1,9 +1,9 @@
-An ordered pair (a . b),is a set of the form {a . {a . b}}
-Let A . B be sets. The cartesian product AXB is,{(a . b) | a e A & b e B}
-A relation between 2 sets A & B, any subset R of AXB ie R C AXB
-R is a relation ON A,if R C AXA
-a is related to b by the relation R. aRb, (a . b) e R
-Let R C AXA (relation on A). R is REFLEXIVE if,aRa for every a e A
-R is SYMMETRIC if,aRb -> bRa for every a & b e A
-R is TRANSITIVE if,aRb and bRc -> aRc for every a,b,c e A
-R has TRICHOTOMY if, for every a & b e A exactly 1 of: aRb OR bRa OR a = b
+An ordered pair (a , b) is| a set of the form {a , {a , b}}
+The CARTESIAN PRODUCT of sets A X B is|{(a , b) st a ϵ A & b ϵ B}
+A relation between sets A & B is| any subset R of A X B ie R C A X B
+R is a relation ON A if| R C AXA
+a is related to b by the relation R, aRb if| (a , b) ϵ R
+a relation on A is REFLEXIVE if|aRa for every a ϵ A
+R is SYMMETRIC if|aRb -> bRa for every a & b ϵ A
+R is TRANSITIVE if|aRb and bRc -> aRc for every a , b , c ϵ A
+R has TRICHOTOMY if|for every a & b ϵ A exactly 1 of: aRb OR bRa OR a = b

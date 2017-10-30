@@ -1,8 +1,8 @@
-Let A be a set. A relation on A is TOTAL ORDER, when it is transitive and has trichotomy. Written "<"
-Let U be a set with total order <. Let A C U. Say m e U is a LOWER BOUND of A when, m <= x for all x e A
-Say m e U is an UPPER BOUND of A when, m >= x for all x e A
-Say m e U is the MINIMUM of A if, #1. m <= x for every x e A #2. m e A
-Say m e U is the MAXIMUM of A if, #1. m >= x for every x e A #2. m e A
-Say m e U is the INFIMUM of A if, #1. m <= x for every x e A #2. if l > m then l > x (if l if larger than m it's not a lower bound)
-Say m e U is the SUPREMUM of A if, #1. m >= x for every x e A #2. if l < m then l < x for some x e A
-If the maximum (minimum infimum supremum) exists then, it is unique
+A relation is TOTAL ORDER when|transitive and trichotomy. Written "<"
+m is a LOWER BOUND of A when| m <= x for all x ϵ A
+m is an UPPER BOUND of A when| m >= x for all x ϵ A
+m is the MINIMUM of A if| #1. m <= x for every x ϵ A #2. m e A
+m is the MAXIMUM of A if| #1. m >= x for every x ϵ A #2. m e A
+m is the INFIMUM of A if| #1. m <= x for every x ϵ A #2. if l > m then l > x (if l if larger than m it's not a lower bound)
+m is the SUPREMUM of A if| #1. m >= x for every x ϵ A #2. if l < m then l < x for some x e A
+If the maximum (minimum infimum supremum) exists then| it is unique

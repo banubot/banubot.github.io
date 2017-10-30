@@ -1,0 +1,15 @@
+a function from A to B is|(f, A, B) where f C A X B satisfying 1. for all x ϵ A, there exists y ϵ B st (x, y) ϵ f 2. If (x1, y1) ϵ f and (x1, y2) ϵ f, then y1 = y2
+given a function (f, A, B) A is| the domain of f
+B is| the codomain of f
+Range(f) =| Range(f) = {b ϵ B st b = f(a)}
+f is INJECTIVE if|if f(x1) = f(x2) then x1 = x2
+f is SURJECTIVE if|Codomain(f) = Range(f) <-> for all y ϵ B, there exists x ϵ A st y = f(x)
+f is BIJECTIVE if| f is injective and surjective
+compostition f o g| g(f(x))
+h o (g o f)|(h o g) o f
+if f and g are injective (surjective)| g o f is injective (surjective)
+the IDENTITY FUNCTION on A is| iA : A -> A iA(x) = x
+iA is bijective|true
+g is INVERSE of f if|1. g o f = iA 2. f o g = iB
+f has and inverse iff|f is bijective
+(g o f)^-1 = | f^-1 o g^-1 
