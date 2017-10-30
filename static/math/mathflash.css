@@ -83,6 +83,7 @@ h2 {
 }
 
 html {
+	width: 100%;
 	background: url(background.jpg);
 	background-repeat: repeat;
 }
