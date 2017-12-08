@@ -1,0 +1,4 @@
+Density Theorem| if a, b ϵ R (reals) with a < b, then there exists r ϵ Q st a < r < b
+Average Theorem| if a, b ϵ R then a < r = (a + b) / 2 < b
+Archimedean Principle| for all r ϵ R, there exists n ϵ N st n > r
+Archimedean Principle 2.0| for all e > 0, there exists n ϵ N st 1/n < e  
