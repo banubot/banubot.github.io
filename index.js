@@ -82,6 +82,38 @@ app.get('/kgb/flashcards/', function($){
 
 	});
 });
+app.get('/cs/flashcards/', function($){
+	fs.readdir(path.join(app.path, 'static/cs/cards'),function(err,files){
+		if (err) {
+			throw err;
+		}
+		$.data = files;
+		$.json();
+		$.end();
+
+	});
+});
+
+app.get('/cs/flashcards/:deck', function($){
+	fs.readFile(path.join(app.path, 'static/cs/cards', $.params.deck),'utf8',function(err,data){
+		if (err) {
+			throw err;
+		}
+		var array = data.split('\n').map(function(line){
+			line = line.split('|');
+			return {
+				front: line[1], 
+				back: line[0]
+			};				
+		});
+		array.pop(); //That's janky! The last card comes in as undef
+		//bc of \n in last row
+		$.data = array;
+		$.json();
+		$.end();
+	});
+});
+
 
 app.get('/math/flashcards/', function($){
 	fs.readdir(path.join(app.path, 'static/math/cards'),function(err,files){
