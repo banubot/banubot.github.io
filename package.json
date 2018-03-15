@@ -11,7 +11,7 @@
   "dependencies": {
 	"mime": "1.4.0",
     "coffeescript": "^1.12.7",
-    "diet-ect": "^1.0.0",
+    "diet-ect-fix": "^1.0.1",
     "diet-static": "^2.2.0",
     "ect": "^0.5.9"
   },

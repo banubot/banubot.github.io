@@ -17,7 +17,7 @@ fs.stat(app.path+'/dev',function(err,stat){
 });
 // allows you to use $.html(app.path + '/path/to/file')
 // to render pages using ect templating
-var ect = require('diet-ect')({ path: app.path+'/views/' });
+var ect = require('diet-ect-fix')({ path: app.path+'/views/' });
 app.header(ect);
 
 // serves static files like css, javascript and images
