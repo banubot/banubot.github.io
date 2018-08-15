@@ -27,7 +27,7 @@ app.header(ect);
 
 // this is what powers the entire kgb website, as the files are accessible at
 // /kgb/myfile.html
-var stat = require('diet-static')({path: app.path});
+var stat = require('diet-static')({path: app.path+'/'});
 app.footer(stat);
 
 // extremely low level way to serve a web page
