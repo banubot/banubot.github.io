@@ -40,7 +40,7 @@ app.get('/buns/', function($){
 });
 
 app.get('/flashcards/cards/:deck', function($){
-	fs.readFile(path.join(app.path, 'flashcards', $.params.deck),'utf8',function(err,data){
+	fs.readFile(path.join(app.path, 'flashcards/cards/', $.params.deck),'utf8',function(err,data){
 		if (err) {
 			throw err;
 		}
@@ -60,7 +60,7 @@ app.get('/flashcards/cards/:deck', function($){
 });
 
 app.get('/flashcards/cards/', function($){
-	fs.readdir(path.join(app.path, 'flashcards'),function(err,files){
+	fs.readdir(path.join(app.path, 'flashcards/cards/'),function(err,files){
 		if (err) {
 			throw err;
 		}
