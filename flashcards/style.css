@@ -1,0 +1,62 @@
+#newCards { 
+	visibility: hidden;
+}
+
+#cardText {
+	text-align: center;
+	background: white;
+	border: 1px solid;
+	position: absolute;
+	width: 500px;
+	height: 200px;
+	padding-top: 150px;
+	top: 50%;
+	left: 50%;
+	opacity: 0.9;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	
+}
+
+#getDeck {
+	top: 400px;
+	position: relative;
+	font-size: 20px;
+}
+
+#prevCard,#nextCard{
+	background-color: #334920;
+	border-radius: 4px;
+	border: 1px solid white;
+	color : white;
+	padding: 12px 28px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+position: relative;	
+
+}
+#prevCard:hover,#nextCard:hover{
+	color: gold;
+	background-color: #84D5ED;
+	border: 1px solid gold;
+}
+#positionIndex {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	color: #334920;
+	background-color: white;
+	border-radius: 100%;
+	padding: 2px;
+	position: relative;
+}
+
+body {
+	background: url(bkgnd.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
