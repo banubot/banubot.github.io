@@ -1,9 +1,0 @@
-An ordered pair (a , b) is| a set of the form {a , {a , b}}
-The CARTESIAN PRODUCT of sets A X B is|{(a , b) st a ϵ A & b ϵ B}
-A relation between sets A & B is| any subset R of A X B ie R C A X B
-R is a relation ON A if| R C AXA
-a is related to b by the relation R, aRb if| (a , b) ϵ R
-a relation on A is REFLEXIVE if|aRa for every a ϵ A
-R is SYMMETRIC if|aRb -> bRa for every a & b ϵ A
-R is TRANSITIVE if|aRb and bRc -> aRc for every a , b , c ϵ A
-R has TRICHOTOMY if|for every a & b ϵ A exactly 1 of: aRb OR bRa OR a = b

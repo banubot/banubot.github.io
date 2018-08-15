@@ -1,8 +1,0 @@
-A relation is TOTAL ORDER when|transitive and trichotomy. Written "<"
-m is a LOWER BOUND of A when| m <= x for all x ϵ A
-m is an UPPER BOUND of A when| m >= x for all x ϵ A
-m is the MINIMUM of A if| #1. m <= x for every x ϵ A #2. m e A
-m is the MAXIMUM of A if| #1. m >= x for every x ϵ A #2. m e A
-m is the INFIMUM of A if| #1. m <= x for every x ϵ A #2. if l > m then l > x (if l if larger than m it's not a lower bound)
-m is the SUPREMUM of A if| #1. m >= x for every x ϵ A #2. if l < m then l < x for some x e A
-If the maximum (minimum infimum supremum) exists then| it is unique
