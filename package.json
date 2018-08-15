@@ -1,0 +1,21 @@
+{
+  "name": "banubot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+	"mime": "1.4.0",
+    "coffeescript": "^1.12.7",
+    "diet-ect": "^1.0.0",
+    "diet-static": "^2.2.0",
+    "ect": "^0.5.9"
+  },
+  "devDependencies": {
+    "diet": "0.16.0"
+  }
+}
