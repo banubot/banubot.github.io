@@ -27,17 +27,8 @@ app.header(ect);
 
 // this is what powers the entire kgb website, as the files are accessible at
 // /kgb/myfile.html
-var stat = require('diet-static')({path: app.path+'/'});
+var stat = require('diet-ecstatic')({path: app.path+'/static'});
 app.footer(stat);
-
-// extremely low level way to serve a web page
-app.get('/buns/', function($){
-	$.header('content-type', 'text/html'); // tells client to render sent page as HTML
-	fs.readFile(app.path+'/index.html', 'utf8', function (err,data) {
-		if (err) throw err;
-		$.end(data);
-	});
-});
 
 app.get('/flashcards/cards/:deck', function($){
 	fs.readFile(path.join(app.path, 'flashcards/cards/', $.params.deck),'utf8',function(err,data){

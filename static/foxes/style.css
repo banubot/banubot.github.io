@@ -1,15 +1,9 @@
-body {
-	background-color: #CDF9BD;
+h1, h2, h3 {
+	font-family: "Font";
 }
 
 img {
 	display: none;
-}
-
-#game {
-	position: relative;
-	width: 800px;
-	margin: 0 auto;
 }
 
 #score {
@@ -19,20 +13,19 @@ img {
 	z-index: 999;
 }
 #start {
-	left: 0;
-	right: 0;
-	top: 100px;
-	margin: 0 auto;
-	width: 500px;
 	text-align: center;
 	color: darksalmon;
-	z-index: 2;
+	left: 50%;
+	top: 50%;
 	position: absolute;
+	transform: translate(-50%, -50%);
 }
 #start h1 {
-	margin-bottom: 0;
-	font-size: 120px;
-	color:forestgreen;
+	font-size: 66px;
+	color:lime;
+}
+#start h2 {
+	font-size: 35px;
 }
 
 #jumbo-score {
@@ -58,14 +51,25 @@ img {
 	color: darksalmon;
 }
 #scores {
-	color: forestgreen;
+	color: green;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
 canvas {
-	position: relative;
-	z-index: 1;
+	width: 700px;
+	height: 95%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border: lime dashed 7px;
+	background-color: #A5FF7F;
+}
+
+@font-face { 
+	font-family: Font;
+	src: url("d.ttf") format("opentype");
 }
 
 .hide {
