@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "diet-ect-fix": ">1.0.1"
+    "diet-ect-fix": "1.0.1"
   },
   "devDependencies": {
     "diet": "0.16.0"
