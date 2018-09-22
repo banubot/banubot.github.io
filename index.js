@@ -35,18 +35,26 @@ app.get('/flashcards/cards/:deck', function($){
 		if (err) {
 			throw err;
 		}
-		var array = data.split('\n').map(function(line){
-			line = line.split('|');
-			return {
-				front: line[1], 
-				back: line[0]
-			};				
+		var rusArray = data.split('\n');
+		rusArray.pop(); 
+
+		fs.readFile(path.join(app.path, 'flashcards/cards/', $.params.deck + "k"),'utf8',function(err2,data){
+			if (err2) {
+				throw err2;
+			}
+			var engArray = data.split('\n');
+			engArray.pop();
+			var array = [];
+			for (var i = 0; i < 10; i++) {
+				array[i] = {
+					front: rusArray[i], 
+					back: engArray[i]
+				};	
+			}
+			$.data = array;
+			$.json();
+			$.end();
 		});
-		array.pop(); //That's janky! The last card comes in as undef
-		//bc of \n in last row
-		$.data = array;
-		$.json();
-		$.end();
 	});
 });
 
@@ -55,7 +63,10 @@ app.get('/flashcards/cards/', function($){
 		if (err) {
 			throw err;
 		}
-		$.data = files;
+		$.data = files.filter(function(filename) {
+			return !filename.endsWith('k');
+		});
+		//console.log(files);
 		$.json();
 		$.end();
 

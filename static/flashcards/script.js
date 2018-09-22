@@ -81,7 +81,7 @@ function getDecks() {
 function renderDecks(decks) {
 	var htmlString = '';
 	decks.forEach(function(deckName){
-		htmlString += '<div><a href="#" onclick="getDeck(\''+ deckName +'\')"><img class="deck-icon" width="30" height="30" src="cards.png"/>'+ deckName +'</a></div>';
+		htmlString += '<div id="deckName"><a href="#" onclick="getDeck(\''+ deckName +'\')"><img class="deck-icon" width="30" height="30" src="cards.png"/>'+ deckName +'</a></div>';
 		var div = document.getElementById("getDeck");
 		div.innerHTML = htmlString;
 	});
