@@ -7,22 +7,21 @@
 	
 </head>
 <body>
+	<center> 
     <div id="cardButton" ><p align="center" id="cardText"></p></div>
     <div id="newCards" >
-        <center>
             Front:<input type="text" id="newFront" name="front"/>
             Back: <input type="text" id="newBack" name="back"/>
             <input value="Add" type="button" onclick="userEnter();"/>
-        </center>
     </div>
-    <p align="center">
-		<button type="button" id="prevCard" onclick="cardsHandle.cardMove(-1);">прошлая</button>
+	<button type="button" id="flip" onclick="cardsHandle.flipDeck();">рус <-> анг</button>
+	<br/>	<button type="button" id="prevCard" onclick="cardsHandle.cardMove(-1);">прошлая</button>
         <span id="positionIndex">0/0</span>
 		<button type="button" id="nextCard" onclick="cardsHandle.cardMove(1);">следующая</button>
-    </p>
 		<div id="getDeck">
 		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>	
 		<script src="script.js"></script>
-	</body>
+	</center>	
+</body>
 </html>

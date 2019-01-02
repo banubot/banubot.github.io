@@ -13,15 +13,12 @@
 	opacity: 0.9;
 	transform: translate(-50%, -50%);
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	
-}
-#prevCard, #nextCard, #positionIndex, #cardText {
-	top: 50%;
+	top: 300px;
 	left: 50%;
 }
 
 #getDeck {
-	top: 400px;
+	top: 400px; 
 	position: relative;
 	font-size: 20px;
 }
@@ -37,24 +34,35 @@
 
 }
 
-#prevCard,#nextCard{
+
+button {
 	font-family: "Font", serif;
 	background-color: #334920;
-	border-radius: 4px;
+	border-radius: 5px;
 	border: 1px solid white;
 	color : white;
-	padding: 12px 28px;
+	padding: 12px;
 	text-align: center;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
-#prevCard:hover,#nextCard:hover{
+#flip {
+	border-radius: 50px;
+	background-color: white;
+	border: 1px solid #334920;
+	color: #334920;
+	margin-bottom: 10px;
+	position: relative;
+	left: -6px;
+}
+
+button:hover, #flip:hover {
 	color: gold;
 	background-color: #E5EEF3;
 	border: 1px solid gold;
 }
+
 #positionIndex {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	color: #334920;

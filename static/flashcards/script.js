@@ -17,6 +17,7 @@ var cardsHandle = {
 	cardText: document.getElementById("cardText"),
 	cardTPosition: document.getElementById("positionIndex"),
 	cardSide: 1,
+    flipped: 1,
 
 	cardAdd: function(back, front){
 		this.cards.push( new Card(back, front) );
@@ -36,7 +37,7 @@ var cardsHandle = {
 		}
 		this.cardInd = this.cardInd % this.cards.length;
 
-		this.cardSide = 1;// Set back to front
+		this.cardSide = this.flipped;// Set back to front
 		this.cardUpdate();
 	},
 	cardTap: function(){
@@ -52,9 +53,18 @@ var cardsHandle = {
 		this.cardUpdate();
 		this.cardInd = 0;
 		this.cardSide = 1;
+	},
+	flipDeck: function(){
+		if (this.flipped === 1) {
+			this.flipped = 0; 
+		} else {
+			this.flipped = 1;
+		}
+		this.cardSide = this.flipped;// Set back to front
+		this.cardUpdate();
 	}
 };
-cardsHandle.cardAdd("Click a deck name below to start! Click card to flip.","Нажмите имя ниже начинать! Нажмите карточку щелкать.");
+cardsHandle.cardAdd("Click a deck name below to start! Click card to flip.","Нажмите имя ниже чтобы начинать! Нажмите карточку чтобы щелкать.");
 cardsHandle.cardUpdate();
 
 var userEnter = function(){

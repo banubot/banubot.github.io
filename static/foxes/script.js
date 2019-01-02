@@ -9,7 +9,6 @@ let foxes = [];
 let playing = true;
 const bun = new Bun();
 let lives = 3;
-document.onClick(start());
 const score = document.getElementById("score");
 let points = 0;
 
@@ -71,7 +70,7 @@ function start() {
 	ctx.drawImage(bun.sprite, 14, 5, 10, 10); 	
 	ctx.drawImage(bun.sprite, 26, 5, 10, 10); 
 	populate();
-	run();
+	requestAnimationFrame(run);
 }
 
 function run() {
