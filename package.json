@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "diet-ecstatic": "^0.1.0",
+    "diet-ecstatic": "^0.1.1",
     "diet-ect-fix": "1.0.1"
   },
   "devDependencies": {
-    "diet": "0.16.0"
+    "diet": "^0.16.0"
   }
 }
