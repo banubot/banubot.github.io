@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{143:function(n,e,t){"use strict";t.r(e);var a=t(0),r=t.n(a);e.default=function(){return r.a.createElement("div",null,r.a.createElement(u,null))};var u=function(n){return r.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-translations-index-js-e9ae9fc787f1345c4a1c.js.map
