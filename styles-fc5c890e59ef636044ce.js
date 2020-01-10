@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"8HEx":function(a,e,o){a.exports={flashbod:"flashcards-container-module--flashbod--1dKZ0",deckName:"flashcards-container-module--deckName--10SnQ",flip:"flashcards-container-module--flip--1xKou",pos:"flashcards-container-module--pos--HL0P-",cardText:"flashcards-container-module--cardText--9lfJY",save:"flashcards-container-module--save--1uRfQ",deck:"flashcards-container-module--deck--2tI7J"}},JUIt:function(a,e,o){a.exports={main:"main-module--main--3yBrp"}}}]);
-//# sourceMappingURL=styles-fc5c890e59ef636044ce.js.map

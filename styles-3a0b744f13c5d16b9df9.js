@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{152:function(a,e,c){a.exports={deckName:"flashcards-container-module--deckName--10SnQ",flip:"flashcards-container-module--flip--1xKou",pos:"flashcards-container-module--pos--HL0P-",cardText:"flashcards-container-module--cardText--9lfJY",save:"flashcards-container-module--save--1uRfQ",deck:"flashcards-container-module--deck--2tI7J"}},153:function(a,e,c){}}]);
-//# sourceMappingURL=styles-3a0b744f13c5d16b9df9.js.map

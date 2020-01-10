@@ -1,0 +1,14 @@
+[
+  {
+    "level": "info",
+    "message": "hurпитray"
+  },
+  {
+    "level": "info",
+    "message": "it works"
+  },
+  {
+    "level": "warning",
+    "message": "look out"
+  }
+]
