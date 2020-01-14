@@ -1,0 +1,20 @@
+#learnbod {
+	background: url(../../static/backgrounds/bkgrd.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	border-radius: 100%;
+	background-color: #D1FB94;
+	opacity: 0.8;
+	padding: 50px;
+	font-family: "Links";
+	transform: translate(-50%, -50%);
+}
