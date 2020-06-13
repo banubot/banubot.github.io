@@ -10,14 +10,15 @@ export default () => (
 	</Helmet>
 	<div id={styles.main}>
 		<h1>Hannah Parraga</h1>
-		<a href="/flashcards/">
+		<Link to="/flashcards/">
 			Flashcards
-		</a>
+		</Link>
 		<br/>
 		<Link to="/translations/">
 			Translations
 		</Link>
-		<br/>	<Link to="/learn/">
+		<br/>	
+		<Link to="/learn/">
 			Programming Tutorials
 		</Link>
 		<br/>

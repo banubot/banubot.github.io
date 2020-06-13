@@ -28,11 +28,9 @@ export default () => (
 			<h2>
 				Building the Project
 			</h2>
-			<a href="https://github.com/banubot/intro-python-tictactoe" target="_blank">
+			<a href="https://github.com/banubot/learn-python" target="_blank">
 				Finished project code
 			</a>
-			<br/>
-			<iframe src=""/>
 			<h2>
 				More Resources
 			</h2>
@@ -82,6 +80,11 @@ export default () => (
 				<li>
 					<a href="https://www.raspberrypi.org/" target="_blank">
 						Raspberry Pi for hardware hacks
+					</a>
+				</li>
+				<li>
+					<a href="https://www.pygame.org/" target="_blank">
+						Pygame game making framework
 					</a>
 				</li>
 				<li>

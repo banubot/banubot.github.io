@@ -21,12 +21,10 @@ export default () => (
 			</h2>
 			<ul>
 				<li>
-					You should know
-					<Link to="/learn/java">
-						 Java
+					You should know <Link to="/learn/java">
+						Java
 					</Link>
-					. We will use a local MySQL database
-					<Link to="/learn/sql">
+					. We will use a local MySQL database <Link to="/learn/sql">
 						 created here 
 					</Link>
 					.
@@ -53,7 +51,6 @@ export default () => (
 			<a href="https://github.com/banubot/learn-springboot" target="_blank">
 				Finished project code
 			</a>
-			<iframe src=""/>
 			<h2>
 				More Resources
 			</h2>

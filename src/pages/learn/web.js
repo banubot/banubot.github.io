@@ -30,7 +30,6 @@ export default () => (
 			<a href="https://github.com/banubot/learn-web" target="_blank">
 				Finished project code
 			</a>
-			<iframe src=""/>
 			<h2>
 				More Resources
 			</h2>
@@ -38,6 +37,11 @@ export default () => (
 				<li>
 					<a href="https://www.w3schools.com/" target="_blank">
 						w3schools
+					</a>
+				</li>
+				<li>
+					<a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">
+						CSS colour names
 					</a>
 				</li>
 			</ul>

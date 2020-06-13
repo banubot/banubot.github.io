@@ -36,7 +36,12 @@ export default () => (
 			<h2>
 				Building the Project
 			</h2>
-			<iframe src=""/>
+			<a href="https://github.com/banubot/learn-sql" target="_blank">
+				Project code
+			</a>
+			<br/>
+			<a href="https://www.youtube.com/watch?v=94F82Ej6UR4">Walk through</a><br/>
+			If you have problems installing MySQL and you are familiar with Docker, try pulling a Docker image. 
 			<h2>
 				More Resources
 			</h2>

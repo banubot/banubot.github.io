@@ -12,10 +12,10 @@ export default () => (
 				Learn Java
 			</h1>
 			<p>
-				In this tutorial, we will create the popular wordgame  
-				<a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">
+				In this tutorial, we will create the popular wordgame <a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">
 					Madlibs
 				</a>
+				.
 			</p>
 			<h2>
 				Getting Started
@@ -27,10 +27,10 @@ export default () => (
 					</a>
 				</li>
 				<li>
-					<a href="https://www.bluej.org/versions.html" target="_blank">
-						Download the BlueJ IDE
+					<a href="https://www.jetbrains.com/idea/download/" target="_blank">
+						Download IntelliJ
 					</a>
-				</li>
+				</li>	
 			</ul>
 			<h2>
 				Building the Project
@@ -38,7 +38,6 @@ export default () => (
 			<a href="https://github.com/banubot/intro-java-madlibs" target="_blank">
 				Finished project code
 			</a>
-			<iframe src=""/>
 			<h2>
 				More Resources
 			</h2>
