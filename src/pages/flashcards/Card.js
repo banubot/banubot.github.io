@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Game from './game/index.js'
+import { Link } from "gatsby"
 import Deck from './Deck'
 import styles from "../../components/flashcards-container.module.css"
 
@@ -145,9 +145,6 @@ class Card extends Component {
     render() {
         return (
             <div>
-                <button type="button" className={styles.flip} onClick={() => this.setState({content: <Game words={this.all}/>})}>
-                    Игра
-                </button>
                 <center>
                     <button type="button" className={styles.flip} onClick={this.switchLang}>рус - анг</button>
                     <br/>
@@ -160,6 +157,11 @@ class Card extends Component {
                         <input type="number" id="goInput" defaultValue="1" min="1" max={this.cards.length}/>
                         <button type="button" onClick={this.goToPos}>давай!</button>
                         <button type="button" onClick={this.deckify}>сортировать</button>
+                        <Link to="/game/">
+                            <button type="button">
+                                игра
+                            </button>
+                        </Link>
                         <br/>
                     <div id="decks">
                         {this.state.decks}
