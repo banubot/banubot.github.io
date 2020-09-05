@@ -14,15 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001083",
     "gatsby": "^2.18.18",
-    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-json": "^2.1.11",
-    "react": "^16.12.0",
+    "ink": "^2.7.1",
+    "react": "^16.13.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
+    "gh-pages": "^3.0.0",
     "prettier": "^1.17.1"
   },
   "repository": {
