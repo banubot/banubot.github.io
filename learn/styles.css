@@ -1,0 +1,94 @@
+
+body {
+   height: 100%;
+   overflow-y: hidden;
+}
+
+#bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+ #circle {
+	position: relative;
+	top: 15vw;
+	width: 70vw;
+	height: 70vw;
+	max-width: 70vh;
+	max-height: 70vh;
+	border-radius: 100%;
+	background-color: #D1FB94;
+	opacity: 0.9;
+	filter: blur(10px);
+
+}
+
+#main {
+	text-align: center;
+	position: relative;
+	top: -40vw;
+	line-height: 3vw;
+}
+
+a, p {
+	text-decoration-line: none;
+	font-size: 2.5vw;
+	line-height: 2vw;
+	color: rgb(0, 77, 0);
+	font-family: "Font2";
+}
+
+h1 {
+	font-family: "Font";
+	font-size: 5vw;
+	margin: 3vw;
+	line-height: 5vw;
+}
+
+@media screen and (min-width: 100vh) {
+	#main {
+		line-height: 3vh;
+		top: -40vh;
+	}
+  #circle {
+		top: 15vh;
+	}
+	h1 {
+		 font-size: 5vh;
+		 line-height: 5vh;
+		 margin: 3vh;
+	}
+	a, p {
+		font-size: 2.5vh;
+		line-height: 2vh;
+ }
+
+}
+
+
+.logo {
+	width: 4vw;
+	height: 4vw;
+	max-width: 4vh;
+	max-height: 4vh;
+}
+
+
+
+
+a:hover {
+	color: rgb(0, 150, 0)
+}
+
+@font-face {
+	font-family: Font;
+	src: url(./static/fonts/l.ttf) format("opentype");
+}
+
+@font-face {
+	font-family: Font2;
+	src: url(./static/fonts/c.ttf) format("opentype");
+}

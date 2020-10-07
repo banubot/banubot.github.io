@@ -1,0 +1,25 @@
+p, a, h1, li, h2, i {	
+    color: white;
+    font-family: Font;
+}
+
+#bkg {
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+@font-face {
+	font-family: Font;
+	src: url(../../static/fonts/a.ttf) format("opentype");
+}
+
+body {
+    height: 100%;
+}
+html {
+    min-height: 100%;
+}
