@@ -1,11 +1,22 @@
-#pythonbod {	
-	background: url(../../static/backgrounds/pythonBkg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color: white;
+p, a, h1, li, h2, i {	 
+    font-family: Font;
 }
 
-#pythonmain {
+#bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
+
+@font-face {
+	font-family: Font;
+	src: url(../../static/fonts/a.ttf) format("opentype");
+}
+
+body {
+    background: rgb(236,219,103);
+    background: linear-gradient(32deg, rgba(236,219,103,1) 0%, rgba(67,102,130,1) 51%);  
+ }
