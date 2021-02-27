@@ -1,11 +1,18 @@
-#javabod {	
-	background: url(../../static/backgrounds/javaBkg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color: white;
+#bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
-#javamain {
+@font-face {
+	font-family: Font;
+	src: url(../../static/fonts/a.ttf) format("opentype");
+}
+
+p, a, h1, li, h2, i {	 
+    font-family: Font;
+    color: aliceblue;
 }
