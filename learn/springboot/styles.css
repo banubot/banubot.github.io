@@ -1,11 +1,17 @@
-#springbod {	
-	background: url(../../static/backgrounds/springBkg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	color: black;
+p, a, h1, li, h2, i {	 
+    font-family: Font;
 }
 
-#springmain {
+#bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+@font-face {
+	font-family: Font;
+	src: url(../../static/fonts/a.ttf) format("opentype");
 }
