@@ -2,89 +2,90 @@
 body {
    height: 100%;
    overflow-y: hidden;
+	 background-color: black;
+	 margin: 0;
+	 padding: 0;
 }
 
 #bkg {
+	position: relative;
+	top: 0;
+	width: 75vh;
+	height: 100vh;
+	border-left: 1vh solid rgb(231,231,231);
+	border-right: 1vh solid rgb(231,231,231);
+}
+
+#polka {
+	width: 100vw;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
+	background-image: url("./static/bkgs/polka.png");
+	background-repeat: repeat;
 }
 
- #circle {
-	position: relative;
-	top: 15vw;
-	width: 70vw;
-	height: 70vw;
-	max-width: 70vh;
-	max-height: 70vh;
-	border-radius: 100%;
-	background-color: #D1FB94;
-	opacity: 0.9;
-	filter: blur(10px);
-
-}
 
 #main {
 	text-align: center;
 	position: relative;
-	top: -40vw;
-	line-height: 3vw;
+	line-height: 3vh;
+	top: -85vh;
 }
 
 a {
 	text-decoration-line: none;
-	font-size: 2.2vw;
-	line-height: 2vw;
-	color: rgb(0, 77, 0);
 	font-family: "Font2";
 }
 
 h1 {
 	font-family: "Font";
-	font-size: 5vw;
-	margin: 3vw;
-	line-height: 5vw;
-}
-@media screen and (min-width: 100vh) {
-	#main {
-		line-height: 3vh;
-		top: -40vh;
-	}
-  #circle {
-		top: 15vh;
-	}
-	h1 {
-		 font-size: 5vh;
-		 line-height: 5vh;
-		 margin: 3vh;
-	}
-	a {
-		font-size: 2.2vh;
-		line-height: 2vh;
- }
-
+	font-size: 7vh;
+	margin: 3vh;
+	line-height: 5vh;
+	color: lightpink;
 }
 
+#logos, #home {
+	position: relative;
+	top: 40vh;
+	left: -35vh;
+}
+
+#home {
+	top: 44vh;
+}
 
 .logo {
-	width: 4vw;
-	height: 4vw;
-	max-width: 4vh;
-	max-height: 4vh;
+	width: 3.5vh;
+	height: 3.5vh;
 }
 
+#sites, #tutorials {
+	position: relative;
+	top: 5vh;
+	left: 15vh;
+}
 
+.site, p, a {
+	color: lightpink;
+	font-family: "Font2";
+	font-size: 3vh;
+}
 
+p { 
+	color: rgb(231,231,231);
+}
 
-a:hover {
-	color: rgb(0, 150, 0)
+.site:hover, a:hover {
+	text-shadow: 2px 2px 5px white;
+	color: rgb(255, 166, 179);
 }
 
 @font-face {
 	font-family: Font;
-	src: url(./static/fonts/l.ttf) format("opentype");
+	src: url(./static/fonts/e.ttf) format("opentype");
 }
 
 @font-face {

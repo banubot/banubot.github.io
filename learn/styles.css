@@ -2,28 +2,28 @@
 body {
    height: 100%;
    overflow-y: hidden;
+	 background-color: black;
+	 margin: 0;
+	 padding: 0;
 }
 
 #bkg {
+	position: relative;
+	top: 0;
+	width: 75vh;
+	height: 100vh;
+	border-left: 1vh solid rgb(231,231,231);
+	border-right: 1vh solid rgb(231,231,231);
+}
+
+#polka {
+	width: 100vw;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
-}
-
- #circle {
-	position: relative;
-	top: 15vw;
-	width: 70vw;
-	height: 70vw;
-	max-width: 70vh;
-	max-height: 70vh;
-	border-radius: 100%;
-	background-color: #D1FB94;
-	opacity: 0.9;
-	filter: blur(10px);
-
+	background-image: url("./static/bkgs/polka.png");
+	background-repeat: repeat;
 }
 
 #main {
