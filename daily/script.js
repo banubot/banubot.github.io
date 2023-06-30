@@ -1,4 +1,4 @@
-import fs;
+import fs from "fs";
 var exerciseActivities = fs.readFileSync('exerciseActivities.txt').toString().split("\n");
 for(i in exerciseActivities) {
     console.log(exerciseActivities[i]);
