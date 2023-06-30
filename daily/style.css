@@ -1,0 +1,75 @@
+
+:root {
+--clr-dark: #4c6a92;
+--clr-light: #f9f9fb;
+--clr-accent: #97d5e0;
+--clr-rgba: #fff3b1;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+* {
+font-family: 'Indie Flower', sans-serif;
+}
+
+body {
+margin: 0;
+padding: 0;
+line-height: 1.5;
+word-spacing: 1.4px;
+color: var(--clr-dark);
+background-image: url('../static/bkgs/wp.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.btn {
+font-size: 2rem;
+font-weight: 700;
+padding: 0.5em 1em;
+margin: 1%;
+color: var(--clr-accent);
+background-color: var(--clr-rgba);
+border: 5px solid var(--clr-accent);
+border-radius: 50em;
+
+}
+
+.list {
+  color: var(--clr-dark);
+  position: absolute;
+
+}
+
+#encouragements {
+  color: var(--clr-accent);
+  position: absolute;
+  top: 75%;
+  left: 75%;
+}
+
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear 1s;
+}
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  /*transition: opacity 2s linear 1s;*/
+}
+
+/*.btn:hover {
+/*transform: translateY(-100px);
+/* background-color: var(--clr-accent);
+color: var(--clr-light); */
+/*}
