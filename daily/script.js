@@ -1,7 +1,7 @@
 activities = ["exercise", 'bass', "espanol"];
 espanolOptions = ["read", "write a story", "play w textbook", "vocab cards"]
 bassOptions = ["major scales", "minor scales", "pentatonic scales", "video"]
-exerciseOptions = ["10 desk pushup", "20 curls", "1 min bridge", "https://youtu.be/OAStOU1hvNk"]
+exerciseOptions = ["10 desk pushup", "20 curls", "1 min bridge", "https://www.youtube.com/embed/-T9K1HI63GU"]
 encouragements = ["proud of you :)", "you've got this :)", "have a great day ☀️", "high five!"]
 
 element = document.getElementById("exerciseBtn");
@@ -30,13 +30,12 @@ var open = function open(which) {
   rndI = Math.floor(Math.random() * options.length)
   option = options[rndI]
   if (option.startsWith('http')) {
-    list.innerHTML = '<iframe width="560" height="315" src="' + option +'" title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
+    list.innerHTML = '<iframe src="' + option +'" allowfullscreen></iframe>'
   } else {
     list.innerHTML = option
   }
   list.style.transition = "opacity 2s linear 0s";
   list.className = "list visible"
-  
   rndI = Math.floor(Math.random() * encouragements.length)
   encouragement = document.getElementById("encouragements");
   encouragement.innerHTML = encouragements[rndI]
