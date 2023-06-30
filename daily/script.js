@@ -1,13 +1,7 @@
-import fs from "fs";
-var exerciseActivities = fs.readFileSync('exerciseActivities.txt').toString().split("\n");
-for(i in exerciseActivities) {
-    console.log(exerciseActivities[i]);
-}
-
 activities = ["exercise", 'bass', "espanol"];
 espanolOptions = ["read", "write a story", "play w textbook", "vocab cards"]
 bassOptions = ["major scales", "minor scales", "pentatonic scales", "video"]
-exerciseOptions = ["10 desk pushup", "20 curls", "1 min bridge"]
+exerciseOptions = ["10 desk pushup", "20 curls", "1 min bridge", "https://youtu.be/OAStOU1hvNk"]
 encouragements = ["proud of you :)", "you've got this :)", "have a great day ☀️", "high five!"]
 
 element = document.getElementById("exerciseBtn");
@@ -34,7 +28,12 @@ var open = function open(which) {
   list = document.getElementById("list");
   options = window[which + "Options"]
   rndI = Math.floor(Math.random() * options.length)
-  list.innerHTML = options[rndI]
+  option = options[rndI]
+  if (option.startsWith('http')) {
+    list.innerHTML = '<iframe width="560" height="315" src="' + option +'" title="YouTube video player" frameborder="0" allowfullscreen></iframe>'
+  } else {
+    list.innerHTML = option
+  }
   list.style.transition = "opacity 2s linear 0s";
   list.className = "list visible"
   
@@ -67,6 +66,3 @@ function close(which) {
   encouragement.style.transition = "opacity 2s linear 0s";
   encouragement.className = "invisible encouragement"
 }
-
-
-export default open;
